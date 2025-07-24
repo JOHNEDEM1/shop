@@ -1622,6 +1622,17 @@ body.nav-open {
     border-radius: 6px;
   }
   
+  /* Mobile price list card */
+  .price-list-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .price-list-card img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
   .products-header {
     flex-direction: column;
     text-align: center;
