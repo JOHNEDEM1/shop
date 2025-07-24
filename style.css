@@ -1287,6 +1287,15 @@ a {
     width: 22px;
     height: 22px;
   }
+  
+  /* Tablet price list card */
+  .price-list-card {
+    padding: 1.5rem;
+  }
+  
+  .price-list-card img {
+    max-width: 500px;
+  }
 }
 
 /* Mobile Navigation Overlay */
