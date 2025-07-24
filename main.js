@@ -779,6 +779,31 @@ function formatPrice(price) {
 function renderProducts(filter = 'all', searchTerm = '') {
   productsGrid.innerHTML = '';
 
+  // Add price list image for waist beads filter
+  if (filter === 'waist-beads') {
+    const priceListCard = document.createElement('div');
+    priceListCard.className = 'price-list-card';
+    priceListCard.innerHTML = `
+      <img src="#" alt="Waist Beads Price List" loading="lazy" style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 8px 25px rgba(254, 142, 0, 0.4); border: 2px solid var(--color-sky);" />
+    `;
+    
+    // Style the price list container to span full width and center the image
+    priceListCard.style.cssText = `
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      background: var(--bg-tertiary);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px var(--shadow-color);
+      border: 1px solid var(--border-color);
+    `;
+    
+    productsGrid.appendChild(priceListCard);
+  }
+
   let filtered;
   if (filter === 'all') {
     filtered = productsData;
