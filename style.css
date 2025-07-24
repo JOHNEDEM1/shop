@@ -464,6 +464,41 @@ a {
   border: 1px solid var(--border-color);
 }
 
+/* Price list card for waist beads */
+.price-list-card {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background: var(--bg-tertiary);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.price-list-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(254, 142, 0, 0.4);
+}
+
+.price-list-card img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(254, 142, 0, 0.4);
+  border: 2px solid var(--color-sky);
+  transition: all 0.3s ease;
+}
+
+.price-list-card img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 35px rgba(254, 142, 0, 0.6);
+}
+
 .product-card:hover,
 .product-card:focus-within {
   box-shadow: 0 6px 26px rgba(254, 142, 0, 0.4);
